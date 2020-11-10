@@ -13,6 +13,9 @@ module.exports = function(grunt){
 		}
 	});
 
-
+	//load plugins
 	grunt.loadNpmTasks('grunt-contrib-concat');
+	
+	grunt.registerTask('concat-js',['concat:js']);
+	grunt.registerTask('concat-css',['concat:js']);
 };
